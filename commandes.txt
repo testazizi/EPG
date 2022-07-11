@@ -1,0 +1,106 @@
+#### mongodb
+sudo service mongod start
+sudo service mongod status
+
+####### env python
+
+python3 -m venv my_env_project
+source my_env_project/bin/activate
+rm -rf my_env_project ## remove it
+
+pip install -r requirements.txt
+
+#######################
+
+pipreqs :generates requirements.txt
+
+############""""""
+sudo vim .env.example
+
+
+######################""
+cp .env.example .env
+
+
+########### flask runing
+ps -fA | grep python
+
+kill -9 pid
+##########
+pipreqs
+############# git
+git clone http_url #clone
+touch file.py  #create file
+git status   #get the statu
+git add .     #add all the files
+
+git config --global user.email mohamedamine.azizi@promy.fr
+git config --global user.name azizimohamedamine
+
+git commit -m "description"
+
+git push origin
+
+git pull  #####"
+git reflog
+git log
+
+git fetch # give u the new branches
+
+git branch -a
+
+git checkout name of the branche
+
+git clone -b mybranch --single-branch git://sub.domain.com/repo.git
+
+
+git push --set-upstream origin branch_name
+
+############ vpn
+sudo openvpn client.ovpn
+
+#################### vm file
+gedit ~/.bashrc
+
+source ~/.bashrc
+######################"
+
+
+
+sudo nano /etc/resolv.conf
+
+java versions 
+sudo update-alternatives --config java
+
+############################""
+database_host = "localhost"
+database_port = 27017
+database_name = "DBbb"
+
+df = pd.read_csv(file,sep=";",low_memory=False,encoding='latin1')
+df = df.astype('string')
+df.fillna('', inplace=True)
+pandas==1.4.1
+[x['_id'] for x in collection.find({}, {'_id': 1})]
+
+
+ db.getCollection("ZIP_COMMUNES_COLLECTION").distinct("status_promy",{"code_dept":"2A"})
+
+
+
+DATA_BASE_URI=mongodb://localhost:27017/permis_construire
+###########################
+
+lien DB prod
+
+mongodb+srv://main-cluster-readonly-user:pkN2MPrT3xiAouAI@maindatacluster-gllv0.gcp.mongodb.net/
+####################################
+
+DB_NAME=final1_permis_construire
+DB_NAME_ENRICHI=cadastre_enrichi
+DATA_BASE_URI=mongodb://localhost:27017/final1_permis_construire
+DATA_BASE_URI_ENRICHI=mongodb://localhost:27017/permis_construire
+PORT=8900
+IP=localhost
+DEBUG=1
+COL_ENRICHI=parcelles_enrichies_new
